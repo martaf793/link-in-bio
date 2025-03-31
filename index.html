@@ -28,7 +28,9 @@
     }
     .item {
       background-color:rgba(197, 194, 194, 0.84);
-    margin-bottom: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
     }
 
     .pics {
@@ -41,9 +43,23 @@
       max-width: 690px;
       margin: auto
     }
-.image-row{margin-bottom: 20px;}
-.name-row{margin-bottom: 25px;}
-.social-links-row{margin-bottom: 30px;}
+.image-row {
+  margin-bottom: 20px;
+text-align: center;
+}
+.name-row {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.social-links-row {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.link-text{
+  text-align: center;
+  flex-grow: 1;
+}
   </style>
 </head>
 
@@ -58,7 +74,7 @@
       🍋🍋 Marta Fernandez Ferrero 🍋🍋
     </div>
 
-    <div class = social-links-row">
+    <div class = "social-links-row">
       <a href="https://github.com/martaf793" target="_blank">
         GitHub
       </a>
@@ -71,28 +87,28 @@
     <div class="links-row">
       <div class="item">
         <img class="pics" src="/pics/Tenerife-Tajinaste.jpg">
-        <a href="https://www.hellocanaryislands.com/tenerife/">
+        <a class="link-text" href="https://www.hellocanaryislands.com/tenerife/">
           Visit Tenerife
         </a>
       </div>
 
       <div class="item">
         <img class="pics" src="/pics/70971Bar_Mar_Bazaar_Meat-09.avif">
-        <a href="https://www.thebazaar.com/location/bar-mar-chicago/" target="_blank">
+        <a class="link-text" href="https://www.thebazaar.com/location/bar-mar-chicago/" target="_blank">
           Spanish Restaurant in Chicago  
         </a>
       </div>
 
       <div class="item">
         <img class="pics" src="/pics/crystal fighters.jpg">
-        <a href="https://www.youtube.com/watch?v=ruakMoSvVsY" target="_blank">
+        <a class="link-text" href="https://www.youtube.com/watch?v=ruakMoSvVsY" target="_blank">
           Crystal Fighters - At Home
         </a>
       </div>
 
       <div class="item">
         <img class="pics" src="/pics/I-house.png">
-        <a href="https://ihouse.uchicago.edu/">
+        <a class="link-text" href="https://ihouse.uchicago.edu/">
           International House Association Uchicago
         </a>
       </div>
