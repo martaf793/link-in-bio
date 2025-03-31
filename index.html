@@ -17,14 +17,14 @@
       min-height:100%;
       padding-top:40px;
       padding-bottom:40px;
-      background-image: url("pics/depositphotos_28631855-stock-illustration-cherry-seamless.jpg");
-      color:black;
+      background: linear-gradient(180deg, #a91212, #ad1717, #c73333, #e24a4c, #e64d50); /* made at https://learnui.design/tools/gradient-generator.html */;
+      color:snow;
       font-family: 'Lora', serif;
       font-size: 16px;
-      font-weight: 900;
+      font-weight: 500;
     }
     a {
-      color:black;
+      color:snow;
       text-decoration: none;
     }
     .avatar-image{
@@ -32,14 +32,17 @@
       height: 128px;
       object-fit: cover;
       border-radius: 128px;
+      border-width: 100;
+      border: 5px solid #ddd;
 
     }
     .item {
-      background-color:rgba(235, 57, 53, 0.99);
+     /* background-color:rgba(233, 74, 71, 0.5);*/
+      background-color:rgba(240, 55, 52, 0.5);
       margin-bottom: 20px;
       display: flex;
       align-items: center;
-      border-radius: 40%/20%;
+      border-radius: 40px;
       padding: 5px;
       padding-right: 53px;
       box-shadow: 4px 4px 10px 0px rgba(182, 12, 12, 0.85);
@@ -64,12 +67,13 @@ text-align: center;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
-  background-color: rgb(123, 219, 123);
-}
+  font-weight: 900;
+  }
 .social-links-row {
   margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
+  /*background-color: rgba(238, 153, 152, 0.99);*/
 }
 .link-text{
   text-align: center;
